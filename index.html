@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A stunning parallax scrolling experience with multiple layers and smooth animations"
+    />
+    <title>Parallax Journey - Explore the Depths</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="task2.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="parallax-container">
+        <div class="parallax-layer layer-bg" data-speed="0.15"></div>
+        <div class="parallax-layer layer-mountains-far" data-speed="0.25"></div>
+        <div class="parallax-layer layer-mountains-mid" data-speed="0.4"></div>
+        <div
+          class="parallax-layer layer-mountains-near"
+          data-speed="0.55"
+        ></div>
+        <div class="parallax-layer layer-foreground" data-speed="0.75"></div>
+
+        <!-- Floating rocks with varying speeds -->
+        <img
+          class="floating-element element-1"
+          src="assets/floating-rock1.png"
+          alt="floating rock"
+          data-speed="0.3"
+        />
+        <img
+          class="floating-element element-2"
+          src="assets/floating-rock2.png"
+          alt="floating rock"
+          data-speed="0.5"
+        />
+        <img
+          class="floating-element element-3"
+          src="assets/floating-rock3.png"
+          alt="floating rock"
+          data-speed="0.7"
+        />
+        <img
+          class="floating-element element-4"
+          src="assets/floating-rock4.png"
+          alt="floating rock"
+          data-speed="0.4"
+        />
+        <img
+          class="floating-element element-5"
+          src="assets/floating-rock5.png"
+          alt="floating rock"
+          data-speed="0.6"
+        />
+        <img
+          class="floating-element element-6"
+          src="assets/floating-rock6.png"
+          alt="floating rock"
+          data-speed="0.35"
+        />
+        <img
+          class="floating-element element-7"
+          src="assets/floating-rock7.png"
+          alt="floating rock"
+          data-speed="0.8"
+        />
+        <img
+          class="floating-element element-8"
+          src="assets/floating-rock8.png"
+          alt="floating rock"
+          data-speed="0.45"
+        />
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">Journey Through Parallax</h1>
+        <p class="hero-subtitle">Scroll down to explore the depths</p>
+        <div class="scroll-indicator">
+          <span class="scroll-arrow">↓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section 1: Introduction -->
+    <section class="content-section section-dark">
+      <div class="content-wrapper">
+        <h2 class="section-title fade-in">
+          Welcome to the Parallax Experience
+        </h2>
+        <p class="section-text fade-in">
+          Parallax scrolling creates an illusion of depth by making background
+          images move slower than foreground images. This technique has been
+          used for decades in video games and has now become a popular web
+          design trend.
+        </p>
+        <p class="section-text fade-in">
+          As you scroll through this page, notice how different layers move at
+          varying speeds, creating a three-dimensional effect that draws you
+          deeper into the visual narrative.
+        </p>
+      </div>
+    </section>
+
+    <!-- Content Section 2: The Science -->
+    <section
+      class="content-section section-light parallax-bg"
+      data-parallax="slow"
+    >
+      <div class="content-wrapper">
+        <h2 class="section-title fade-in">The Science of Depth Perception</h2>
+        <div class="info-grid">
+          <div class="info-card fade-in">
+            <h3>Motion Parallax</h3>
+            <p>
+              Objects closer to us appear to move faster than distant objects
+              when we move. This principle is fundamental to how we perceive
+              depth in the real world.
+            </p>
+          </div>
+          <div class="info-card fade-in">
+            <h3>Layer Separation</h3>
+            <p>
+              By dividing the scene into multiple layers and animating them at
+              different rates, we create the illusion of a three-dimensional
+              space on a two-dimensional screen.
+            </p>
+          </div>
+          <div class="info-card fade-in">
+            <h3>Visual Storytelling</h3>
+            <p>
+              Parallax effects guide the user's attention and create memorable,
+              engaging experiences that encourage exploration and interaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section 3: The Journey -->
+    <section class="content-section section-dark">
+      <div class="content-wrapper">
+        <h2 class="section-title fade-in">A Journey Through Layers</h2>
+        <p class="section-text fade-in">
+          This page uses multiple parallax layers working in harmony:
+        </p>
+        <ul class="feature-list fade-in">
+          <li>
+            <strong>Background Layer:</strong> The slowest moving layer (15%
+            speed) provides the distant backdrop
+          </li>
+          <li>
+            <strong>Far Mountains:</strong> Moving at 25% speed, these form the
+            horizon
+          </li>
+          <li>
+            <strong>Mid Mountains:</strong> At 40% speed, they create the middle
+            depth
+          </li>
+          <li>
+            <strong>Near Mountains:</strong> Moving at 55% speed, establishing
+            the foreground
+          </li>
+          <li>
+            <strong>Foreground Elements:</strong> The fastest layer (75% speed)
+            provides immediate depth
+          </li>
+          <li>
+            <strong>Floating Objects:</strong> Each with unique speeds (30-80%)
+            for dynamic interest
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Content Section 4: Technical Details -->
+    <section
+      class="content-section section-light parallax-bg"
+      data-parallax="fast"
+    >
+      <div class="content-wrapper">
+        <h2 class="section-title fade-in">
+          Built with Modern Web Technologies
+        </h2>
+        <p class="section-text fade-in">
+          This parallax experience is crafted using pure HTML5, CSS3, and
+          vanilla JavaScript - no libraries required. The implementation
+          prioritizes performance with requestAnimationFrame for smooth 60fps
+          animations.
+        </p>
+        <div class="tech-stack fade-in">
+          <div class="tech-item">
+            <span class="tech-icon">🎨</span>
+            <h4>CSS3</h4>
+            <p>
+              Modern layouts with Flexbox and Grid, smooth transitions, and
+              responsive design
+            </p>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">⚡</span>
+            <h4>JavaScript</h4>
+            <p>
+              Optimized parallax calculations using requestAnimationFrame for
+              buttery-smooth scrolling
+            </p>
+          </div>
+          <div class="tech-item">
+            <span class="tech-icon">📱</span>
+            <h4>Responsive</h4>
+            <p>
+              Fully responsive design that adapts to any screen size and
+              disables effects on mobile for performance
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section 5: Continue Scrolling -->
+    <section class="content-section section-dark">
+      <div class="content-wrapper">
+        <h2 class="section-title fade-in">Keep Exploring</h2>
+        <p class="section-text fade-in">
+          The magic of parallax scrolling lies in the journey itself. Each
+          scroll reveals new layers, new perspectives, and new ways of seeing
+          the same scene.
+        </p>
+        <p class="section-text fade-in">
+          Notice how the floating rocks drift by at different speeds - some
+          quickly passing in the foreground, others slowly drifting in the
+          distance. This layered movement creates a sense of traveling through a
+          three-dimensional space.
+        </p>
+      </div>
+    </section>
+
+    <!-- Content Section 6: Final Thoughts -->
+    <section class="content-section section-gradient">
+      <div class="content-wrapper">
+        <h2 class="section-title fade-in">The Art of Digital Storytelling</h2>
+        <p class="section-text fade-in">
+          Parallax scrolling transforms a simple scroll gesture into an
+          immersive journey. It's not just about aesthetics - it's about
+          creating an emotional connection with your audience through motion and
+          depth.
+        </p>
+        <p class="section-text fade-in">
+          Whether you're building a portfolio, telling a brand story, or
+          creating an interactive experience, parallax scrolling adds that extra
+          layer of polish that makes your work memorable.
+        </p>
+        <p class="section-text fade-in">
+          This technique has evolved from simple two-layer effects to complex
+          multi-layer scenes with dozens of independently moving elements, each
+          contributing to a cohesive visual narrative.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Parallax Journey</p>
+        <p>Internship Project</p>
+      </div>
+    </footer>
+
+    <script src="task2.js"></script>
+  </body>
+</html>
